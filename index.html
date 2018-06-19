@@ -3,10 +3,42 @@
 	<head>
 		<meta charset="utf-8" />
 		<title></title>
+		<style>
+			.wrapper {
+   display: grid;
+   grid-template-columns: repeat(3,1fr);
+   align-items: end;
+   grid-auto-rows: 200px;
+}
+.box1 {
+   align-self: stretch;
+   background: red;
+}
+.box2 {
+   align-self: start;
+   background: blue;
+   
+}	
+.box3{
+   background: green;
+	
+}
+		</style>
 	</head>
 	<body>
-		<h1>tianqiaa</h1>
-		<button>一个按钮</button>
-	
+		<div class="wrapper">
+   <div class="box1">One</div>
+   <div class="box2">Two</div>
+   <div class="box3">Three</div>
+    <div class="box1">One</div>
+   <div class="box2">Two</div>
+   <div class="box3">Three</div>
+    <div class="box1">One</div>
+   <div class="box2">Two</div>
+   <div class="box3">Three</div> <div class="box1">One</div>
+   <div class="box2">Two</div>
+   <div class="box3">Three</div>
+</div>
+
 	</body>
 </html>
